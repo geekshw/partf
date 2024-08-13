@@ -1,8 +1,16 @@
 from django.shortcuts import render
-from apps.base.models import Index
-# Create your views here.
+from .models import Index  # предположим, что у вас есть модель Index
 
 def index(request):
-    index = Index.objects.latest('id')
-    return render(request, "index.html", locals())
+    try:
+        index_object = Index.objects.get(id=1)  # Пример запроса
+    except Index.DoesNotExist:
+        index_object = None
+    return render(request, 'index.html', {'index_object': index_object})
+
+
+def home(request):
+    index = Index.objects.first()  
+    return render(request, 'index.html', {'index': index})
+
 

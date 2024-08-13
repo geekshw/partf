@@ -99,8 +99,6 @@
 				<div class="big-text">
 					<ul class="flippy">
 						<li><span>{{index.title}}</span></li>
-						<li><span>BORN INTO CREATIVITY</span></li>
-						<li><span>FOCUSED ON STRATEGY</span></li>
 					</ul>
 				</div>								
 				<a class="scroll" href="#about"><div class="scroll-btn tipped" data-title="about agency"  data-tipper-options='{"direction":"top","follow":"true"}'></div></a>
@@ -111,9 +109,9 @@
 				<div class="container">
 					<div class="sixteen columns" data-scrollreveal="enter top and move 150px over 1s">
 						<div class="header-text">
-							<div class="header-shadow-text">About Us</div>
-							<h1>About Us</h1>
-							<p>WE'RE A CLOSE TEAM OF CREATIVES, DESIGNERS & DEVELOPERS WHO WORK TOGETHER TO CREATE BEAUTIFUL, ENGAGING DIGITAL EXPERIENCES.</p>
+							<div class="header-shadow-text"></div>
+							<h1>{{ index.about_title }}</h1>
+							<p>{{ index.about_description }}</p>
 						</div>
 					</div>
 				</div>
@@ -122,46 +120,46 @@
 					<div class="container">
 						<div class="one-third column" data-scrollreveal="enter left and move 150px over 1s">
 							<div class="icon-left1">&#xf0c6;</div>
-							<h5>Networking.</h5>
-							<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui.</p>
+							<h1>{{ index.about_title }}</h1>
+							<p>{{ index.about_description }}</p>
 						</div>
 						<div class="one-third column" data-scrollreveal="enter bottom and move 150px over 1s">
 							<div class="icon-left1">&#xf080;</div>
-							<h5>Analytics.</h5>
-							<p>Sed ut perspiciatis unde omnis iste natus error est eligendi optio cumque nihil.</p>
+							<h1>{{ index.about_title }}</h1>
+							<p>{{ index.about_description }}</p>
 						</div>
 						<div class="one-third column" data-scrollreveal="enter right and move 150px over 1s">
 							<div class="icon-left1">&#xf120;</div>
-							<h5>Development.</h5>
-							<p class="padding-bottom-project">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil.</p>
+							<h1>{{ index.about_title }}</h1>
+							<p>{{ index.about_description }}</p>
 						</div>
 					</div>
 				</div>	
 				<div class="video-sections">
 					<div class="video-section-1">	
 						<div class="just_pattern"></div>
-						<video id="video_background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" poster="images/1.jpg"> 
-							<source src="videos/video.webm" type="video/webm"> 
-							<source src="videos/video.mp4" type="video/mp4"> 
-							<source src="videos/video.ogg" type="video/ogg"> 
+						<video id="video_{%static 'background' %}" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" poster="images/1.jpg"> 
+							<source src="{%static 'videos/video.webm' %}" type="video/webm"> 
+							<source src="{%static 'videos/video.mp4' %}" type="video/mp4"> 
+							<source src="{%static 'videos/video.ogg'%}" type="video/ogg"> 
 						</video>
 						<div class="text-over-video">A Day at the Office</div>	
 					</div>	
 					<div class="video-section-2">	
 						<div class="container">
 							<div class="nine columns padding-top-video-sec2" data-scrollreveal="enter right and move 150px over 1s">
-								<h5>WHAT WE DO.</h5>
-								<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Praesent commodo arcu massa.</p>
+								<h1>{{ index.about_title }}</h1>
+								<p>{{ index.about_description }}</p>
 							</div>
 							<div class="clear"></div>
 							<div class="nine columns" data-scrollreveal="enter right and move 150px over 1s">
-								<h5>WHAT WE ACHIEVE.</h5>
-								<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Praesent commodo arcu massa.</p>
+								<h1>{{ index.about_title }}</h1>
+								<p>{{ index.about_description }}</p>
 							</div>
 							<div class="clear"></div>
 							<div class="nine columns" data-scrollreveal="enter right and move 150px over 1s">
-								<h5>AT THE END.</h5>
-								<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Praesent commodo arcu massa.</p>
+								<h1>{{ index.about_title }}</h1>
+								<p>{{ index.about_description }}</p>
 							</div>
 						</div>
 					</div>	

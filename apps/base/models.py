@@ -1,37 +1,63 @@
-from django.db.models import * 
+# apps/base/models.py
 
-# Create your models here.
-class Index(Model):
-    title = CharField(
+from django.db import models
+
+class Index(models.Model):
+    title = models.CharField(
         max_length=255,
         verbose_name='Заголовок сайта (на главной странице)'
     )
-    description = TextField(
-        verbose_name="Описание сайта ()"
+    description = models.TextField(
+        verbose_name="Описание сайта"
     )
-    logo = ImageField(
+    logo = models.ImageField(
         upload_to='image/',
         verbose_name='Логотип'
     )
-    banner = ImageField(
-        upload_to='image/'
+    banner = models.ImageField(
+        upload_to='image/',
+        verbose_name='Баннер'
     )
-    twitter = URLField(
-        verbose_name='Укжите ссылку на twitter'
+    twitter = models.URLField(
+        verbose_name='Укажите ссылку на Twitter'
     )
-    facebook = URLField(
-        verbose_name='Укжите ссылку на facebook'
+    facebook = models.URLField(
+        verbose_name='Укажите ссылку на Facebook'
     )
-    github = URLField(
-        verbose_name='Укжите ссылку на github'
+    github = models.URLField(
+        verbose_name='Укажите ссылку на GitHub'
     )
-    gmail = URLField(
-        verbose_name='Укжите ссылку на почту'
+    gmail = models.URLField(
+        verbose_name='Укажите ссылку на почту'
     )
-    
+
     def __str__(self) -> str:
         return self.title
-    
+
     class Meta:
-        verbose_name = ''
+        verbose_name = 'Настройки главной страницы'
         verbose_name_plural = 'Настройки главной страницы'
+
+class Banner(models.Model):
+    title = models.CharField(max_length=200, verbose_name="Заголовок")
+    image = models.ImageField(upload_to='banners/', verbose_name="Изображение")
+    description = models.TextField(verbose_name="Описание")
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = "Баннер"
+        verbose_name_plural = "Баннеры"
+
+class AboutUs(models.Model):
+    title = models.CharField(max_length=200, verbose_name="Заголовок")
+    description = models.TextField(verbose_name="Описание")
+    image = models.ImageField(upload_to='about_us/', verbose_name="Изображение")
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = "О нас"
+        verbose_name_plural = "О нас"
