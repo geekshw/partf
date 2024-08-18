@@ -172,17 +172,17 @@
 					<div class="sixteen columns" data-scrollreveal="enter top and move 150px over 1s">
 						<div class="header-text">
 							<div class="header-shadow-text">the team</div>
-							<h1>the team</h1>
-							<p>WE'RE A SMALL, FRIENDLY AND TALENTED TEAM. WE CRAFT BEAUTIFUL DIGITAL SOLUTIONS FOR AWESOME CLIENTS ACROSS ALL THE PLATFORMS.</p>
+							<h1>{{ index.about_title }}</h1>
+							<p>{{ index.about_description }}</p>
 						</div>
 					</div>
 				</div>
 				<div class="container">	
 					<div class="four columns" data-scrollreveal="enter left and move 150px over 1s">
 						<div class="team-wrap">	
-							<img src="images/team1.jpg" alt=""/>
-							<h5>JAMES BEAN</h5>
-							<p>Creative Director</p>
+							<img src="{% static 'images/team1.jpg' %}" alt=""/>
+							<h1>{{ index.about_title }}</h1>
+							<p>{{ index.about_description }}</p>
 							<div class="team-line"></div>
 							<div class="social-team">
 								<ul class="team-social">
@@ -204,9 +204,9 @@
 					</div>	
 					<div class="four columns" data-scrollreveal="enter left and move 150px over 1s">	
 						<div class="team-wrap">	
-							<img src="images/team2.jpg" alt=""/>
-							<h5>ISABELLA MORO</h5>
-							<p>Chief Executive Officer</p>
+							<img src="{% static 'images/team2.jpg' %}" alt=""/>
+							<h1>{{ index.about_title }}</h1>
+							<p>{{ index.about_description }}</p>
 							<div class="team-line"></div>
 							<div class="social-team">
 								<ul class="team-social">
@@ -228,9 +228,9 @@
 					</div>	
 					<div class="four columns" data-scrollreveal="enter right and move 150px over 1s">	
 						<div class="team-wrap">	
-							<img src="images/team3.jpg" alt=""/>
-							<h5>DAVID IVE</h5>
-							<p>General Manager</p>
+							<img src="{% static 'images/team3.jpg' %}" alt=""/>
+							<h1>{{ index.about_title }}</h1>
+							<p>{{ index.about_description }}</p>
 							<div class="team-line"></div>
 							<div class="social-team">
 								<ul class="team-social">
@@ -252,9 +252,9 @@
 					</div>	
 					<div class="four columns" data-scrollreveal="enter right and move 150px over 1s">	
 						<div class="team-wrap">	
-							<img src="images/team4.jpg" alt=""/>
-							<h5>JAMES MORO</h5>
-							<p>HR Manager</p>
+							<img src="{% static 'images/team4.jpg' %}" alt=""/>
+							<h1>{{ index.about_title }}</h1>
+							<p>{{ index.about_description }}</p>
 							<div class="team-line"></div>
 							<div class="social-team">
 								<ul class="team-social">
@@ -285,62 +285,63 @@
 							<ol class="slides">
 								<li class="current">
 									<div class="description">
-										<h4>Tilted Content Slideshow</h4>
-										<p>This slider plays with 3D perspective and performs some interesting animations on the right-hand side images.</p>
+										<img src="{% static 'images/team2.jpg' %}" alt=""/>
+										<h1>{{ index.about_title }}</h1>
+										<p>{{ index.about_description }}</p>
 									</div>
 									<div class="tiltview col">
-										<a href="#"><img src="images/1_screen.jpg" alt=""/></a>
-										<a href="#"><img src="images/2_screen.jpg" alt=""/></a>
+										<a href="#"><img src="{% static 'images/1_screen.jpg' %}" alt=""/></a>
+										<a href="#"><img src="{% static 'images/2_screen.jpg' %}" alt=""/></a>
 									</div>
 								</li>
 								<li>
 									<div class="description">
-										<h4>CSS Animations</h4>
-										<p>We are using 12 different animations for showing and hiding the items of a slide. The animations are defined by randomly adding data-attributes called <code>data-effect-in</code> and <code>data-effect-out</code> for every slide. </p>
+										<h1>{{ index.about_title }}</h1>
+										<p>{{ index.about_description }}</p>
 									</div>
 									<div class="tiltview row">
-										<a href="#"><img src="images/3_mobile.jpg" alt=""/></a>
-										<a href="#"><img src="images/4_mobile.jpg" alt=""/></a>
+										<a href="#"><img src="{% static 'images/3_mobile.jpg' % }" alt=""/></a>
+										<a href="#"><img src="{% static 'images/4_mobile.jpg' % }" alt=""/></a>
 									</div>
 								</li>
 								<li>
 									<div class="description">
-										<h4>Tilted Items</h4>
-										<p>The perspective view is achieved by adding a perspective value to the slide list item and tilting a division that contains the two screenshots.</p>
+										<h1>{{ index.about_title }}</h1>
+										<p>{{ index.about_description }}</p>
 									</div>
 									<div class="tiltview col">
-										<a href="#"><img src="images/5_screen.jpg" alt=""/></a>
-										<a href="#"><img src="images/6_screen.jpg" alt=""/></a>
+										<a href="#"><img src="{% static 'images/5_screen.jpg' %}" alt=""/></a>
+										<a href="#"><img src="{% static 'images/6_screen.jpg' %}" alt=""/></a>
 									</div>
 								</li>
 								<li>
 									<div class="description">
-										<h4>Column or Row</h4>
-										<p>The items in the tilted container are either laid out in a column or in a row. For some directions we need to adjust the animation delays for the items, since we don't want the items to overlap each other when they move in or out.</p>
+										<h1>{{ index.about_title }}</h1>
+										<p>{{ index.about_description }}</p>
 									</div>
 									<div class="tiltview row">
-										<a href="#"><img src="images/1_mobile.jpg" alt=""/></a>
-										<a href="#"><img src="images/2_mobile.jpg" alt=""/></a>
+										<a href="#"><img src="{% static 'images/1_mobile.jpg' % }" alt=""/></a>
+										<a href="#"><img src="{% static 'images/2_mobile.jpg' % }" alt=""/></a>
 									</div>
 								</li>
 								<li>
 									<div class="description">
-										<h4>Responsiveness</h4>
-										<p>For smaller screens, the items on the right hand side will become less opaque and serve as decoration only. The focus will be on the description which will occupy all the width.</p>
+										<h1>{{ index.about_title }}</h1>
+										<p>{{ index.about_description }}</p>
 									</div>
 									<div class="tiltview col">
-										<a href="#"><img src="images/3_screen.jpg" alt=""/></a>
-										<a href="#"><img src="images/4_screen.jpg" alt=""/></a>
+										<a href="#"><img src="{% static 'images/3_screen.jpg'%}" alt=""/></a>
+										<a href="#"><img src="{% static 'images/4_screen.jpg'%}" alt=""/></a>
 									</div>
 								</li>
 								<li>
 									<div class="description">
-										<h4>Navigation</h4>
-										<p>For the "line" navigation we use a little trick to make the clickable area a bit bigger: we add a thick white border to the top and bottom of the span. Since the border is part of the element, it will be part of the clickable zone.</p>
+										<h1>{{ index.about_title }}</h1>
+										<p>{{ index.about_description }}</p>
 									</div>
 									<div class="tiltview row">
-										<a href="#"><img src="images/5_mobile.jpg" alt=""/></a>
-										<a href="#"><img src="images/6_mobile.jpg" alt=""/></a>
+										<a href="#"><img src="{% static 'images/5_mobile.jpg' % }" alt=""/></a>
+										<a href="#"><img src="{% static 'images/6_mobile.jpg' % }" alt=""/></a>
 									</div>
 								</li>
 							</ol>
@@ -353,8 +354,8 @@
 					<div class="sixteen columns" data-scrollreveal="enter top and move 150px over 1s">
 						<div class="header-text">
 							<div class="header-shadow-text">work</div>
-							<h1>work</h1>
-							<p>WE BELIEVE OUR WORK SPEAKS FOR ITSELF. BROWSE OUR MOST RECENT PROJECTS BELOW.</p>
+							<h1>{{ index.about_title }}</h1>
+							<p>{{ index.about_description }}</p>
 						</div>
 					</div>
 				</div>
@@ -390,7 +391,7 @@
 						<a class="expander" href="project2.html" title="">
 							<img  src="images/gallery/1.jpg" alt="" />	
 							<div class="mask"></div>
-							<h4>All The Time</h4>
+							<h4>{{ index.about_title }}</h4>
 						</a>	
 						<a class="fancybox-effects-d" href="images/gallery/1.jpg" title="">
 							<div class="fancybox-button">&#xf106;</div>
@@ -400,7 +401,7 @@
 						<a class="expander" href="project1.html" title="">
 							<img  src="images/gallery/2.jpg" alt="" />
 							<div class="mask"></div>	
-							<h4>Golden Eagle</h4>	
+							<h4>{{ index.about_title }}</h4>
 						</a>	
 						<a class="fancybox-effects-d" href="images/gallery/2.jpg" title="">
 							<div class="fancybox-button">&#xf106;</div>
@@ -410,59 +411,59 @@
 						<a class="expander" href="project3.html" title="">
 							<img  src="images/gallery/3.jpg" alt="" />
 							<div class="mask"></div>
-							<h4>All The Time</h4>
+							<h4>{{ index.about_title }}</h4>
 						</a>	
-						<a class="fancybox-effects-d" href="images/gallery/3.jpg" title="">
+						<a class="fancybox-effects-d" href="{% static 'images/gallery/3.jpg' %}" title="">
 							<div class="fancybox-button">&#xf106;</div>
 						</a>				
 					</li>	
 					<li class="portfolio-box web-design illustration1">
 						<a class="expander" href="project4.html" title="">
-							<img  src="images/gallery/4.jpg" alt="" />
+							<img  src="{% static 'images/gallery/4.jpg' %}" alt="" />
 							<div class="mask"></div>
-							<h4>Fixed Mag</h4>	
+							<h4>{{ index.about_title }}</h4>
 						</a>	
-						<a class="fancybox-effects-d" href="images/gallery/4.jpg" title="">
+						<a class="fancybox-effects-d" href="{% static 'images/gallery/4.jpg' %}" title="">
 							<div class="fancybox-button">&#xf106;</div>
 						</a> 			
 					</li>	
 					<li class="portfolio-box photography web-design">	
 						<a class="expander" href="project2.html" title="">
-							<img  src="images/gallery/5.jpg" alt="" />	
+							<img  src="{% static 'images/gallery/5.jpg' %}" alt="" />	
 							<div class="mask"></div>	
-							<h4>La Catería</h4>
+							<h4>{{ index.about_title }}</h4>
 						</a>	
-						<a class="fancybox-effects-d" href="images/gallery/5.jpg" title="">
+						<a class="fancybox-effects-d" href="{% static 'images/gallery/5.jpg' %}" title="">
 							<div class="fancybox-button">&#xf106;</div>
 						</a>			
 					</li>
 					<li class="portfolio-box illustration1 motion-graphics">	
 						<a class="expander" href="project1.html" title="">
-							<img  src="images/gallery/6.jpg" alt="" />
+							<img  src="{% static 'images/gallery/6.jpg' %}" alt="" />
 							<div class="mask"></div>
-							<h4>5th Anniversary Set</h4>
+							<h4>{{ index.about_title }}</h4>
 						</a>		
-						<a class="fancybox-effects-d" href="images/gallery/6.jpg" title="">
+						<a class="fancybox-effects-d" href="{% static 'images/gallery/6.jpg' %}" title="">
 							<div class="fancybox-button">&#xf106;</div>
 						</a>		
 					</li>	
 					<li class="portfolio-box motion-graphics photography">
 						<a class="expander" href="project3.html" title="">
-							<img  src="images/gallery/7.jpg" alt="" />	
+							<img  src="{% static 'images/gallery/7.jpg' %}" alt="" />	
 							<div class="mask"></div>
-							<h4>La Catería</h4>
+							<h4>{{ index.about_title }}</h4>
 						</a>	
-						<a class="fancybox-effects-d" href="images/gallery/7.jpg" title="">
+						<a class="fancybox-effects-d" href="{% static 'images/gallery/7.jpg' %}" title="">
 							<div class="fancybox-button">&#xf106;</div>
 						</a>			
 					</li>	
 					<li class="portfolio-box web-design illustration1">
 						<a class="expander" href="project4.html" title="">
-							<img  src="images/gallery/8.jpg" alt="" />	
+							<img  src="{% static 'images/gallery/8.jpg' %}" alt="" />	
 							<div class="mask"></div>
-							<h4>Dan Fink</h4>
+							<h4>{{ index.about_title }}</h4>
 						</a>	
-						<a class="fancybox-effects-d" href="images/gallery/8.jpg" title="">
+						<a class="fancybox-effects-d" href="{% static 'images/gallery/8.jpg' %}" title="">
 							<div class="fancybox-button">&#xf106;</div>
 						</a>			
 					</li>		
@@ -471,7 +472,7 @@
 				<div id="link-work">	
 					<div class="container">
 						<div class="sixteen columns" data-scrollreveal="enter top and move 150px over 1s">
-							<h6>ready to start conversation?</h6>
+							<h6>{{ index.about_title }}</h6>
 							<div class="cl-effect-5"><a class="scroll" href="#contact"><span data-hover="contact us">get in touch</span></a></div>
 						</div>
 					</div>		
@@ -519,8 +520,8 @@
 					<div class="sixteen columns" data-scrollreveal="enter top and move 150px over 1s">
 						<div class="header-text">
 							<div class="header-shadow-text">services</div>
-							<h1>services</h1>
-							<p>JUST CHECK OUT ALL OF THE SERVICE LISTS BELOW TO GET A GENERAL IDEA OF WHAT WE ARE CAPABLE OF DELIVERING.</p>
+							<h5>{{ index.about_title }}</h5>
+							<p>{{ index.about_description }}</p>
 						</div>
 					</div>
 				</div>
@@ -528,56 +529,51 @@
 					<div class="one-third column" data-scrollreveal="enter left and move 150px over 1s">
 						<div class="services-offer">
 							<span class="svg-icon flat-filled" id="filled-brush"></span>
-							<h5>Creative design</h5>
-							<p>Cum sociis natoque penatibus et magnis dis massa.</p>
+							<h5>{{ index.about_title }}</h5>
+							<p>{{ index.about_description }}</p>
 						</div>
 					</div>
 					<div class="one-third column" data-scrollreveal="enter bottom and move 150px over 1s">
 						<div class="services-offer">
 							<span class="svg-icon flat-filled" id="filled-phone"></span>
-							<h5>Responsive design</h5>
-							<p>Cum sociis natoque penatibus et magnis dis massa.</p>
+							<h5>{{ index.about_title }}</h5>
+							<p>{{ index.about_description }}</p>
 						</div>
 					</div>
 					<div class="one-third column" data-scrollreveal="enter right and move 150px over 1s">
 						<div class="services-offer">
 							<span class="svg-icon flat-filled" id="filled-message"></span>
-							<h5>Excellent Support</h5>
-							<p>Cum sociis natoque penatibus et magnis dis massa.</p>
+							<h5>{{ index.about_title }}</h5>
+							<p>{{ index.about_description }}</p>
 						</div>
 					</div>
 					<div class="clear"></div>
 					<div class="one-third column" data-scrollreveal="enter left and move 150px over 1s">
 						<div class="services-offer">
 							<span class="svg-icon flat-filled" id="filled-clock"></span>
-							<h5>quick support</h5>
-							<p>Cum sociis natoque penatibus et magnis dis massa.</p>
+							<h5>{{ index.about_title }}</h5>
+							<p>{{ index.about_description }}</p>
 						</div>
 					</div>
 					<div class="one-third column" data-scrollreveal="enter bottom and move 150px over 1s">
 						<div class="services-offer">
 							<span class="svg-icon flat-filled" id="filled-email"></span>
-							<h5>Contact form</h5>
-							<p>Cum sociis natoque penatibus et magnis dis massa.</p>
+							<h5>{{ index.about_title }}</h5>
+							<p>{{ index.about_description }}</p>
 						</div>
 					</div>
 					<div class="one-third column" data-scrollreveal="enter right and move 150px over 1s">
 						<div class="services-offer">
 							<span class="svg-icon flat-filled" id="filled-heart"></span>
-							<h5>Made with love</h5>
-							<p>Cum sociis natoque penatibus et magnis dis massa.</p>
-						</div>
-					</div>
-				</div>			
-			</div>
-
+							<h5>{{ index.about_title }}</h5>
+							<p>{{ index.about_description }}</p>							
 			<div id="plans">	
 				<div class="container">
 					<div class="sixteen columns" data-scrollreveal="enter top and move 150px over 1s">
 						<div class="header-text">
 							<div class="header-shadow-text">our plans</div>
-							<h1>our plans</h1>
-							<p>YOU CAN CONFIGURE YOUR PRICING TABLE USING THE GRID SYSTEM IN ORDER TO MAKE IT RESPONSIVE FOR SMALL DEVICES.</p>
+							<h5>{{ index.about_title }}</h5>
+							<p>{{ index.about_description }}</p>	
 						</div>
 					</div>
 				</div>
@@ -622,22 +618,22 @@
 				<div class="container">	
 					<div class="sixteen columns">
 						<div class="logos-wrap">
-							<img  src="images/logos/1.png" alt="" />	
+							<img  src="{% static 'images/logos/1.png' %}" alt="" />	
 						</div>
 						<div class="logos-wrap">
-							<img  src="images/logos/2.png" alt="" />	
+							<img  src="{% static 'images/logos/2.png' %}" alt="" />	
 						</div>	
 						<div class="logos-wrap">
-							<img  src="images/logos/3.png" alt="" />	
+							<img  src="{% static 'images/logos/3.png' %}" alt="" />	
 						</div>	
 						<div class="logos-wrap">
-							<img  src="images/logos/4.png" alt="" />	
+							<img  src="{% static 'images/logos/4.png' %}" alt="" />	
 						</div>	
 						<div class="logos-wrap">
-							<img  src="images/logos/5.png" alt="" />	
+							<img  src="{% static 'images/logos/5.png' %}" alt="" />	
 						</div>	
 						<div class="logos-wrap">
-							<img  src="images/logos/2.png" alt="" />	
+							<img  src="{% static 'images/logos/2.png' %}" alt="" />	
 						</div>		
 					</div>
 				</div>		
@@ -651,24 +647,24 @@
 					<div class="one-third column">
 						<div class="blog-post">
 							<img  src="images/blog/1.jpg" alt="" />
-							<h5>Blog post</h5>
-							<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Praesent commodo arcu massa.</p>
+							<h5>{{ index.about_title }}</h5>
+							<p>{{ index.about_description }}</p>	
 							<p><span>26.2.2014.</span><span> 3 comments</span></p>
 						</div>
 					</div>	
 					<div class="one-third column">
 						<div class="blog-post">
 							<img  src="images/blog/2.jpg" alt="" />
-							<h5>Blog post</h5>
-							<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Praesent commodo arcu massa.</p>
+							<h5>{{ index.about_title }}</h5>
+							<p>{{ index.about_description }}</p>	
 							<p><span>17.2.2014.</span><span> 7 comments</span></p>
 						</div>
 					</div>	
 					<div class="one-third column">
 						<div class="blog-post">
 							<img  src="images/blog/3.jpg" alt="" />
-							<h5>Blog post</h5>
-							<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Praesent commodo arcu massa.</p>
+							<h5>{{ index.about_title }}</h5>
+							<p>{{ index.about_description }}</p>	
 							<p><span>12.2.2014.</span><span> 4 comments</span></p>
 						</div>
 					</div>
@@ -685,8 +681,8 @@
 					<div class="sixteen columns" data-scrollreveal="enter top and move 150px over 1s">
 						<div class="header-text">
 							<div class="header-shadow-text">contact</div>
-							<h1>contact</h1>
-							<p>We create best opportunities for your business.</p>
+							<h1>{{ index.about_title }}</h1>
+							<p>{{ index.about_description }}</p>
 						</div>
 					</div>
 				</div>
